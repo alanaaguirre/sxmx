@@ -31,6 +31,13 @@ h1 h2 h3 h4 h5 h6{
     font-style: normal;
     line-height: normal;
 }
+.scenes a{
+    text-decoration: none !important;
+    color: #0B0A0A;
+}
+.card-title{
+    font-weight: 700 !important;
+}
 /*Footer*/
 footer{
     padding: 24px 0px 24px 0px;
