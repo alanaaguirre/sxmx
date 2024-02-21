@@ -29,7 +29,8 @@ body{
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    color: #900;
+    /* color: #900; */
+    color: white;
     text-align: center;
     font-size: 3rem;
     font-style: normal;
