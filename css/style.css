@@ -51,6 +51,29 @@ body{
 .card p{
     margin-bottom: 0 !important;
 }
+
+/* Avatar */
+.avatar-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+/* Raiting */
+.rating {
+    display: inline-block;
+    font-size: 1rem;
+    color: #ffd700; /* Color de estrella activa */
+  }
+
+  .rating .star {
+    cursor: pointer;
+  }
 /*Footer*/
 footer{
     padding: 24px 0px 24px 0px;
