@@ -3,6 +3,8 @@
 
 /* General */
 body{
+    min-height: 75rem;
+    padding-top: 4.5rem;
     font-family: "Nunito Sans", sans-serif !important;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -11,14 +13,16 @@ body{
     "wdth" 100,
     "YTLC" 500;
 }
-h1 h2 h3 h4 h5 h6{
-    font-family: "Nunito Sans", sans-serif !important;
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
     font-variation-settings:
     "wdth" 100,
     "YTLC" 500;
+}
+.navbar-nav .nav-link{
+    font-weight: 700 !important;
 }
 .logo{
     font-family: "Josefin Sans", sans-serif;
@@ -31,12 +35,20 @@ h1 h2 h3 h4 h5 h6{
     font-style: normal;
     line-height: normal;
 }
-.scenes a{
+
+.card a{
     text-decoration: none !important;
     color: #0B0A0A;
 }
+.card a:hover{
+    text-decoration: underline;
+    color: #900;
+}
 .card-title{
     font-weight: 700 !important;
+}
+.card p{
+    margin-bottom: 0 !important;
 }
 /*Footer*/
 footer{
@@ -48,9 +60,26 @@ footer{
     justify-content: center;
     align-items: center;
 }
+
 footer .nav-link{
     color: white;
 }
 footer .nav-link > a:hover {
     color: lightgray;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .logo{
+        font-size: 1.5rem;
+    }
+    .card{
+        font-size: .8rem;
+    }
+    .wd100{
+        width: 100%;
+    }
+    .h5, h5 {
+        font-size: 1rem;
+    }
+  }
