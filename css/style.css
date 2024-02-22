@@ -64,6 +64,76 @@ body{
     border-radius: 50%;
     margin-right: 10px;
   }
+  /* VideoPlayer */
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+#videoContainer {
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    position: relative;
+}
+
+#my-video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+}
+#my-video img {
+    width: -webkit-fill-available;
+    height: inherit;
+}
+.vjs-poster img {
+    -o-object-fit: cover !important;
+    object-fit: cover !important;
+}
+.video-js .vjs-big-play-button {
+    font-size: 3em;
+    line-height: 1.9em !important;
+    height: 2em !important;
+    width: 2em !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 0;
+    cursor: pointer;
+    opacity: 1;
+    border: 0.06666em solid #fff;
+    background-color: #2b333f;
+    background-color: rgba(43, 51, 63, .7);
+    border-radius: 45rem !important;
+    transition: all .4s;
+}
+
+#playIcon {
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+}
+
+#overlay.fade-in {
+    display: flex;
+    opacity: 1;
+}
 /* Raiting */
 .rating {
     display: inline-block;
