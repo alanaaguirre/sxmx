@@ -3,6 +3,7 @@
 
 /* General */
 body{
+    background-color: #f9f9f9 !important;
     min-height: 75rem;
     padding-top: 4.5rem;
     font-family: "Nunito Sans", sans-serif !important;
@@ -30,8 +31,7 @@ body{
     font-weight: 700;
     font-style: normal;
     /* color: #900; */
-    color: white;
-    text-align: center;
+    color: #900;
     font-size: 3rem;
     font-style: normal;
     line-height: normal;
@@ -64,6 +64,7 @@ body{
     border-radius: 50%;
     margin-right: 10px;
   }
+  
   /* VideoPlayer */
   #overlay {
     display: none;
@@ -154,12 +155,15 @@ footer{
     justify-content: center;
     align-items: center;
 }
+footer .logo{
+    font-size: 2rem;
+}
 
 footer .nav-link{
     color: white;
 }
-footer .nav-link > a:hover {
-    color: lightgray;
+footer .nav-linka:hover {
+    color: #900;
 }
 
 

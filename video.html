@@ -17,11 +17,11 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <a class="navbar-brand logo" href="#">SEXMEX</a>
-          <button class="btn btn-outline-success my-2 my-sm-0 d-lg-none d-md-block" id="searchIcon">
+          <button class="btn btn-outline-dark my-2 my-sm-0 d-lg-none d-md-block" id="searchIcon">
             <i class="fas fa-search"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <div class="collapse navbar-collapse pe-2" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0 p-2">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">SCENES</a>
                   </li>
@@ -36,16 +36,45 @@
                     <a class="nav-link" href="#">
                                       TAGS</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link mobileshow" aria-current="page" href="#">SPECIALS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mobileshow" aria-current="page" href="#">LOGOUT</a>
+                  </li>
             </ul>
-            <form class="d-flex">
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
                 <div class="input-group">
                   <input type="search" class="form-control" placeholder="Buscar" aria-label="Buscar">
                   <button class="btn btn-outline-dark" type="submit">
                     <i class="fas fa-search"></i>
                   </button>
                 </div>
-              </form>
+            </form>
+            <div class="dropdown text-end">
+                <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                  User
+                </a>
+                <ul class="dropdown-menu text-small dropdown-menu-lg-end">
+                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+              </div>
           </div>
+        </div>
+        <div id="searchBar" style="display: none;" class="container z-4 py-4">
+            <div class="row">
+                <div class="col-lg-12">
+                    <form class="d-flex">
+                        <div class="input-group">
+                          <input type="search" class="form-control" placeholder="Buscar" aria-label="Buscar">
+                          <button class="btn btn-outline-dark" type="submit">
+                            <i class="fas fa-search"></i>
+                          </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
     </nav>
     
@@ -54,6 +83,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
+            <div class="logo text-center py-4">SEXMEX</div>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link mobileshow" aria-current="page" href="#">LOGOUT</a>
@@ -75,7 +105,7 @@
                   <a class="nav-link" href="#">
                                     TAGS</a>
                 </li>
-                <!-- <li class="nav-item">
+                <li class="nav-item">
                   <a class="nav-link mobileshow" href="#">FAVORITES</a>
                 </li>
                 <li class="nav-item">
@@ -83,28 +113,10 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link mobileshow" aria-current="page" href="#">LOGOUT</a>
-                </li> -->
+                </li>
               </ul>
           </div>
         </div>
-    </div>
-
-    <section id="searchBar" style="display: none;" class="z-4 pt-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                      </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="input-group my-2 my-sm-0" id="searchBar" style="display: none;">
-        <input type="text" class="form-control" placeholder="Buscar" aria-label="Buscar" aria-describedby="button-addon2">
-        <button class="btn btn-outline-success" type="button" id="button-addon2">Buscar</button>
     </div>
     
     <div id="overlay" class="z-1"></div>
@@ -114,14 +126,28 @@
                 <div class="col-lg-12 my-2">
                     <h3>Title Scene</h3>
                 </div>
-                <div class="col-lg-12 d-flex justify-content-between align-items-center">
-                    <div class="d-flex align-items-center">
-                        <img src="https://placehold.co/32x32/000000/FFFFFF/png" class="Avatar rounded-circle me-2" alt="Model Name">
-                        <div>
-                            <p class="mb-0">Model</p>
+                <div class="col-lg-12 d-flex justify-content-between align-items-start">
+                    <div class="d-flex flex-wrap w-75">
+                        <div class="d-flex align-items-center ps-1 mx-2 my-1">
+                            <img src="https://placehold.co/32x32/000000/FFFFFF/png" class="Avatar rounded-circle me-2" alt="Model Name">
+                            <div>
+                                <p class="mb-0">Model</p>
+                            </div>
                         </div>
+                        <!-- <div class="d-flex align-items-center ps-1 mx-2 my-1">
+                            <img src="https://placehold.co/32x32/000000/FFFFFF/png" class="Avatar rounded-circle me-2" alt="Model Name">
+                            <div>
+                                <p class="mb-0">Model</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center ps-1 mx-2 my-1">
+                            <img src="https://placehold.co/32x32/000000/FFFFFF/png" class="Avatar rounded-circle me-2" alt="Model Name">
+                            <div>
+                                <p class="mb-0">Model</p>
+                            </div>
+                        </div> -->
                     </div>
-                    <p class="mb-0">14 Feb 2024</p>
+                    <p class="mb-0 pt-1 text-nowrap">14 Feb 2024</p>
                 </div>
             </div>
             <div class="row row-cols-12 row-cols-md-12 row-cols-lg-12 g-4">
@@ -155,20 +181,20 @@
                     </div>
                 </div>
                 <div class="col-lg-12">
-                    <h5>Description:</h5>
+                    <h5>Story:</h5>
                     <p>The priest suspects that the newly widowed Nicole Zurich is not following the path of the Lord. Every
                         shepherd knows his flock well and knows which sheep is the sluttiest.</p>
                 </div>
                 <div class="col-lg-12 d-flex justify-content-start align-items-center flex-wrap">
-                    <span class="badge bg-danger me-2 mb-2">Badge 3</span>
-                    <span class="badge bg-danger me-2 mb-2">Badge 3</span>
-                    <span class="badge bg-danger me-2 mb-2">Badge 3</span>
-                    <span class="badge bg-danger me-2 mb-2">Badge 3</span>
-                    <span class="badge bg-danger me-2 mb-2">Badge 3</span>
-                    <span class="badge bg-danger me-2 mb-2">Badge 3</span>
-                    <span class="badge bg-danger me-2 mb-2">Badge 3</span>
-                    <span class="badge bg-danger me-2 mb-2">Badge 3</span>
-                    <span class="badge bg-danger me-2 mb-2">Badge 3</span>
+                    <a href="#" class="badge text-bg-secondary m-1">Big Ass</a>
+                    <a href="#" class="badge text-bg-secondary m-1">Big Tits</a>
+                    <a href="#" class="badge text-bg-secondary m-1">Blowjob</a>
+                    <a href="#" class="badge text-bg-secondary m-1">Brunettes</a>
+                    <a href="#" class="badge text-bg-secondary m-1">Creampie</a>
+                    <a href="#" class="badge text-bg-secondary m-1">Hardcore</a>
+                    <a href="#" class="badge text-bg-secondary m-1">Mexican</a>
+                    <a href="#" class="badge text-bg-secondary m-1">Porn In Spanish</a>
+                    <a href="#" class="badge text-bg-secondary m-1">Tatooed</a>
                 </div>
             </div>
         </div>
@@ -258,11 +284,39 @@
         </div>
     </section>
 
-    <footer>
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <h2>Comments</h2>
+                    <!-- Área de Comentarios -->
+                    <div class="d-flex flex-column p4-2 my-4 border-bottom">
+                        <h6>DJMAK808</h6>
+                        <p class="small mb-0">14 Feb 2024</p>
+                        <p>She’s the finest woman here :)</p>
+                    </div>
+                    <div class="d-flex flex-column p4-2 my-4 border-bottom">
+                        <h6>DJMAK808</h6>
+                        <p class="small mb-0">14 Feb 2024</p>
+                        <p>She’s the finest woman here :)</p>
+                    </div>
+                    <!-- Formulario de Comentarios -->
+                    <form id="formComentario pt-4">
+                        <div class="mb-3">
+                            <textarea class="form-control" id="comentario" rows="5" placeholder="Post your comments" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Post</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="logo my-4">SEXMEX</div>
+                <div class="col-lg-12 text-center">
+                    <h2 class="logo my-4">SEXMEX</h2>
                     <p class="text-center">All Models Appearing On This Website Are 18 Years Or Older. Click Here For Records Required Pursuant To 18 U.S.C. 2257 Record Keeping Requirements Compliance Statement. By Entering This Site You Swear That You Are Of Legal Age In Your Area To View Adult Material And That You Wish To View Such Material.<br><br>
 
                         Copyright © 2024 Sexmex<br>
